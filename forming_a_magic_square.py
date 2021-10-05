@@ -33,7 +33,7 @@ def formingMagicSquare(s):
     return min(sum_arr)
     
 if __name__ == '__main__':
-    fptr = open('test_cases.txt', 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     s = []
 
