@@ -15,7 +15,16 @@ import sys
 
 def pickingNumbers(a):
     # Write your code here
-    pass
+    a.sort()
+    subarr = []
+    temp_arr = []
+    int1 = 0
+
+    for i in range(len(a)):
+        if not temp_arr:
+            temp_arr.append(a[i])
+        
+
 
 if __name__ == '__main__':
     fptr = open('test_cases.txt', 'w')
