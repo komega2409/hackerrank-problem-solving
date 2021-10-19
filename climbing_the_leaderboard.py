@@ -16,7 +16,7 @@ import sys
 #
 
 def climbingLeaderboard(ranked, player):
-    return [0, 1, 2, 3]
+    pass
 
 if __name__ == '__main__':
     fptr = open('test_cases.txt', 'w')
