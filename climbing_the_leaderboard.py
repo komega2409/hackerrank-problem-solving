@@ -16,10 +16,15 @@ import sys
 #
 
 def climbingLeaderboard(ranked, player):
-    pass
+    player_rank = []
+    for i in range(len(player)):
+        ranked.append(player[i])
+        ranked_sorted = sorted(set(ranked), reverse=True)
+        player_rank.append(ranked_sorted.index(player[i]) + 1)
+    return player_rank
 
 if __name__ == '__main__':
-    fptr = open('test_cases.txt', 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     ranked_count = int(input().strip())
 
